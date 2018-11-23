@@ -1,13 +1,28 @@
+# 
+#password = 'a123456'
+#time = 3
+#pw = input('Enter your password: ')
+#while pw != password:
+#	if time > 0:
+#		print('Try again')
+#		time = time - 1
+#		print('You have', time, 'time left')
+#		pw = input('Enter your password: ')
+#	elif time == 0:
+#		print('No more chance!')
+#		break
+#print('Good job!')
+
 password = 'a123456'
 time = 3
-pw = input('Enter your password: ')
-while pw != password:
-	if time > 0:
-		print('Try again')
-		time = time - 1
-		print('You have', time, 'time left')
-		pw = input('Enter your password: ')
-	elif time == 0:
-		print('No more chance!')
+while True:
+	pwd = input('Enter your password: ')
+	if pwd == password:
+		print('Login Successfully!')
 		break
-print('Good job!')
+	else:
+		time = time - 1
+		print('You have', time, 'time left.')
+		if time == 0:
+			print('No more chance!')
+			break
