@@ -15,7 +15,7 @@
 
 password = 'a123456'
 time = 3
-while True:
+while time > 0:
 	pwd = input('Enter your password: ')
 	if pwd == password:
 		print('Login Successfully!')
@@ -23,6 +23,4 @@ while True:
 	else:
 		time = time - 1
 		print('You have', time, 'time left.')
-		if time == 0:
-			print('No more chance!')
-			break
+print('No more chance!')
